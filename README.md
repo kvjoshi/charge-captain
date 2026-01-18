@@ -8,13 +8,61 @@ Charge Captain is a full-stack platform that enables EV users to discover chargi
 
 ```
 chargeCaptain/
-├── chargeCaptainApi/          # Backend API (Node.js + Express + MongoDB)
-├── chargeCaptainDashboard/    # Web Admin Portal (React + Vite)
-├── cc_mob/                    # Mobile App (Flutter)
+├── chargeCaptainApi/          # Backend API (Node.js + Express + MongoDB) [Git Submodule]
+├── chargeCaptainDashboard/    # Web Admin Portal (React + Vite) [Git Submodule]
+├── cc_mob/                    # Mobile App (Flutter) [Git Submodule]
 ├── COORDINATION.md            # Multi-instance development guide
 ├── WORK_STATUS.md             # Real-time work status tracker
 └── DASHBOARD_REFERENCE.md     # Dashboard feature reference
 ```
+
+**Architecture**: This monorepo uses **Git Submodules** to manage three independent repositories:
+- Each submodule maintains its own git history and can be developed independently
+- The parent repository coordinates all three modules and tracks specific commits
+- Submodules can be updated independently without affecting the parent repo
+
+### 🔄 Cloning the Monorepo
+
+**First-time clone** (includes all submodules):
+```bash
+git clone --recurse-submodules https://github.com/kvjoshi/charge-captain.git
+cd charge-captain
+```
+
+**If you already cloned without submodules**:
+```bash
+git clone https://github.com/kvjoshi/charge-captain.git
+cd charge-captain
+git submodule init
+git submodule update
+```
+
+### 🔧 Working with Submodules
+
+**Update all submodules to latest commits**:
+```bash
+git submodule update --remote --merge
+```
+
+**Update a specific submodule**:
+```bash
+cd cc_mob
+git pull origin master
+cd ..
+git add cc_mob
+git commit -m "Update cc_mob submodule to latest"
+git push
+```
+
+**Check submodule status**:
+```bash
+git submodule status
+```
+
+**Submodule Repositories**:
+- Mobile App: https://github.com/kvjoshi/cc_mob
+- API Server: https://github.com/kvjoshi/chargeCaptainApi
+- Dashboard: https://github.com/kvjoshi/chargeCaptainDashboard
 
 ## 📦 Modules
 
