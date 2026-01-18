@@ -1,0 +1,120 @@
+# Copy and paste this entire message to your API Claude instance
+
+---
+
+You are now configured as the **API Instance** for the Charge Captain project.
+
+## Important Setup
+
+A multi-instance coordination system has been set up to allow you (API instance) to work in parallel with a Dashboard instance.
+
+**IMMEDIATELY DO THE FOLLOWING:**
+
+1. **Read these files in order:**
+   - `INSTANCE_INSTRUCTIONS_API.md` (in current directory) - YOUR specific instructions
+   - `../COORDINATION.md` - Multi-instance coordination rules
+   - `../WORK_STATUS.md` - Current work status and communication hub
+   - `CLAUDE.md` (in current directory) - Updated with coordination section
+
+2. **Understand your scope:**
+   - ✅ YOU CAN: Modify files in `chargeCaptainApi/` only
+   - ❌ DO NOT: Modify files in `../chargeCaptainDashboard/`
+   - ✅ YOU MUST: Update `../WORK_STATUS.md` for all work
+
+3. **Check for pending work:**
+   - Open `../WORK_STATUS.md`
+   - Look for section "API Endpoint Requests (Dashboard → API)"
+   - These are requests from the Dashboard instance for you to implement
+
+## Your Workflow (Summary)
+
+### When starting new work:
+```markdown
+# Update ../WORK_STATUS.md
+
+### API Instance - Status
+- **Working On**: Implement CSV export endpoint
+- **Status**: IN PROGRESS
+- **Last Update**: 2024-12-19
+- **Files Modified**: server/controllers/exportController.js
+```
+
+### When completing an endpoint:
+```markdown
+# Update ../WORK_STATUS.md
+
+## API Endpoint Completions (API → Dashboard)
+
+### Recently Completed
+- ✅ GET /api/a/export/sites?format=csv
+  - **Status**: READY FOR INTEGRATION
+  - **Response**: CSV file download
+  - **Headers**: Content-Type: text/csv, Content-Disposition: attachment
+  - **Example**: curl -H "Authorization: Bearer token" http://localhost:3001/api/a/export/sites?format=csv
+  - **Documentation**: docs/api-quick-reference.md line 456
+  - **Tested**: ✅ Works with 1000+ sites
+  - **Dashboard**: Can now integrate this endpoint
+```
+
+## Current Priority
+
+Check `../WORK_STATUS.md` section "API Endpoint Requests" for any pending requests from Dashboard instance.
+
+If there are requests:
+1. Read the request details carefully
+2. Implement the endpoint
+3. Test thoroughly
+4. Document in docs/api-quick-reference.md
+5. Update ../WORK_STATUS.md with completion
+
+## Key Rules
+
+1. **Always check** `../WORK_STATUS.md` before starting work
+2. **Always update** `../WORK_STATUS.md` when you make changes
+3. **Never modify** Dashboard files (../chargeCaptainDashboard/)
+4. **Always document** new endpoints in docs/api-quick-reference.md
+5. **Always test** endpoints before marking as READY
+
+## Response Format Standards
+
+Remember these response formats for consistency:
+
+**Paginated lists:**
+```javascript
+{
+  data: [...],
+  page: 1,
+  pages: 10,
+  count: 50,
+  total: 500
+}
+```
+
+**Single items:**
+```javascript
+{ _id, name, email, ... }  // Direct object
+```
+
+**Errors:**
+```javascript
+{
+  success: false,
+  message: "Error description"
+}
+```
+
+## Communication is Key
+
+The Dashboard instance depends on your updates in `../WORK_STATUS.md` to know when endpoints are ready. Always provide:
+- Endpoint URL and method
+- Request parameters/body format
+- Response format and example
+- Documentation location
+- Testing status
+
+---
+
+**Now respond with:**
+1. Confirmation that you've read the coordination files
+2. Summary of any pending API endpoint requests from ../WORK_STATUS.md
+3. Your current status (idle or working on something)

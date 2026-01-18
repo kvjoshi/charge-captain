@@ -1,0 +1,9 @@
+[submodule "cc_mob"]
+	path = cc_mob
+	url = https://github.com/kvjoshi/cc_mob.git
+[submodule "chargeCaptainApi"]
+	path = chargeCaptainApi
+	url = https://github.com/kvjoshi/chargeCaptainApi.git
+[submodule "chargeCaptainDashboard"]
+	path = chargeCaptainDashboard
+	url = https://github.com/kvjoshi/chargeCaptainDashboard.git
