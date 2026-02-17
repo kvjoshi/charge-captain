@@ -1,15 +1,19 @@
 # Charge Captain - Work Status Tracker
 
-**Last Updated**: 2026-01-18 23:15 (Update this timestamp whenever you make changes!)
+**Last Updated**: 2026-02-17 (Excel Site Import feature added)
 
 ---
 
 ## 🎯 Current Active Work
 
 ### Mobile Instance - Status
-- **Working On**: Phase 2 Complete - All 4 Feature Enhancement Tasks DONE
-- **Status**: ✅✅ PHASE 1 & 2 COMPLETED - 96% PRODUCTION READY
-- **Last Update**: 2026-01-18 23:15
+- **Working On**: Phase 3 - Profile Editing Feature (COMPLETE)
+- **Status**: ✅ ALL TASKS COMPLETED
+- **Last Update**: 2026-01-26
+- **Current Progress**:
+  - ✅ **Task 8**: Display City in Profile (COMPLETED)
+  - ✅ **API Task 2**: Profile Update Endpoint (COMPLETED - Backend Agent)
+  - ✅ **Task 9**: Edit Mode UI (COMPLETED)
 - **Phase 1 Completed** (2026-01-18):
   - ✅ **Task 1**: Sites API Migration (4 files modified)
   - ✅ **Task 2**: Points System Integration (2 files modified)
@@ -19,7 +23,11 @@
   - ✅ **Task 5**: Add Feedback History Viewing (3 files: 1 new screen + AuthController + profile)
   - ✅ **Task 6**: Implement Real Vehicle Sync (3 files modified)
   - ✅ **Task 7**: Integrate Impact Tracking APIs (2 files completely rewritten)
-- **Progress**: 100% Complete (7/7 tasks done - both phases)
+- **Phase 3 Completed** (2026-01-26):
+  - ✅ **Task 8**: Display City in Profile (1 file modified - profileScreen.dart)
+  - ✅ **Task 9**: Edit Mode UI (2 files modified - AuthController + profileScreen.dart)
+  - ✅ **API Task 2**: Profile Update Endpoint (Backend Agent - COMPLETED)
+- **Progress**: 100% Complete (9/9 tasks done - all 3 phases)
 - **Next Steps**:
   - 🎯 Ready for comprehensive testing
   - 🎯 Ready for production deployment after QA
@@ -91,7 +99,56 @@
 
 ---
 
-## ✅ Completed Today (2026-01-18)
+## ✅ Completed Today (2026-01-26)
+
+### Mobile App
+- [x] **Task 8: Display City in Profile** ✅ COMPLETED
+  - Added city field to Account section in profileScreen.dart (lines 247-263)
+  - Uses `userData?['city']` with fallback to 'Not set'
+  - Matches existing UI styling (secondaryColor label, primaryColor value)
+  - Positioned after Mobile field, before closing of Account ExpansionTile
+  - **Files Modified**: `lib/views/profile/profileScreen.dart`, `CLAUDE.md`
+  - **Lines Added**: 17 lines (city display) + 18 lines (coordination rules)
+  - **Additional**: Created `AGENT_PROMPTS.md` for cross-agent communication
+  - **Commit**: 714332d
+
+- [x] **Task 9: Profile Edit Mode UI** ✅ COMPLETED (2026-01-26)
+  - **Files Modified**: `lib/controller/auth/auth.dart`, `lib/views/profile/profileScreen.dart`
+  - **Implementation**: Inline edit mode with toggle (Option A from plan)
+  - **Features Added**:
+    - ✅ Added `updateProfile()` method to AuthController (lines 318-412)
+      - JWT authentication with Bearer token
+      - Request validation (at least one field required)
+      - Comprehensive error handling (400, 401, 403 errors)
+      - Automatic local storage update after successful save
+    - ✅ Added edit mode state management to profileScreen
+      - State variables: `_isEditMode`, `_isSaving`
+      - Text controllers: `_nameController`, `_phoneController`, `_cityController`
+      - Methods: `_toggleEditMode()`, `_saveProfile()`
+    - ✅ Updated Account ExpansionTile UI
+      - Edit icon button in title row
+      - Cancel/Save buttons in edit mode
+      - Loading indicator during save
+    - ✅ Conditional field rendering
+      - Name: Text widget (read) → TextFormField (edit)
+      - Mobile: Text widget (read) → TextFormField (edit)
+      - City: Text widget (read) → TextFormField (edit)
+      - Email: Always read-only (gray background)
+    - ✅ Input validation
+      - Name: 2-100 characters, trimmed
+      - Phone: 10-15 digits (allows formatting)
+      - City: 2-50 characters, trimmed
+    - ✅ User feedback
+      - Success: Green SnackBar "Profile updated successfully"
+      - Error: Red SnackBar with error message
+      - Loading: CircularProgressIndicator in Save button
+  - **API Integration**: `POST /api/cu/updateProfile` (Backend Agent completed)
+  - **Lines Added**: ~200 lines (95 in AuthController + ~105 in profileScreen)
+  - **Status**: ✅ PRODUCTION READY
+
+---
+
+## ✅ Completed (2026-01-18)
 
 ### Mobile App
 - [x] **Task 1: Migrated to New Sites API** ✅ PRODUCTION READY
@@ -369,6 +426,33 @@
    - **Achievements**: Complete rewrite with real API integration, removed all mock data
    - **Note**: Rank calculation deferred to future development per user request
 
+**Phase 3: Profile Editing Feature** 📋 PLANNING (2026-01-26)
+
+8. ~~**Display City in Profile**~~ ✅ COMPLETED (2026-01-26)
+   - **Files**: `lib/views/profile/profileScreen.dart`, `CLAUDE.md`
+   - **Task**: Add city row to Account section (currently missing)
+   - **Data Source**: `userData?['city']` from FlutterSecureStorage
+   - **Status**: ✅ COMPLETED
+   - **Commit**: 714332d
+   - **Changes**: Added city field after Mobile in Account ExpansionTile (17 lines)
+
+9. ~~**Make Profile Editable**~~ ✅ COMPLETED (2026-01-26)
+   - **Files**: `lib/views/profile/profileScreen.dart`, `lib/controller/auth/auth.dart`
+   - **Task**: Add edit mode UI for name, mobile, and city
+   - **Editable Fields**: name, phone (mobile), city
+   - **Read-Only Fields**: email (cannot be changed)
+   - **UI Approach**: Inline edit mode with toggle (keeps current look)
+   - **Status**: ✅ COMPLETED
+   - **Implementation Details**:
+     - Added `updateProfile()` method to AuthController
+     - Added edit mode state management with toggle functionality
+     - Conditional field rendering (Text → TextFormField)
+     - Input validation with user-friendly error messages
+     - Loading states and success/error feedback
+     - Automatic local storage updates
+   - **Lines Added**: ~200 lines total
+   - **Plan File**: `C:\Users\karma\.claude\plans\iterative-brewing-creek.md`
+
 ### API Tasks (for Mobile Support)
 
 **Phase 1: High Priority Endpoints**
@@ -386,10 +470,64 @@
 
 **Phase 2: Medium Priority**
 
-2. **Notification System** (Future Enhancement)
+2. **Profile Update Endpoint** ✅ COMPLETED (2026-01-26)
+   - [x] `POST /api/cu/updateProfile` - Update user profile (name, phone, city)
+   - **Purpose**: Allow users to edit their profile after onboarding
+   - **Authentication**: Required (clientUserProtect middleware)
+   - **Request Body**:
+     ```json
+     {
+       "name": "John Doe",      // Optional
+       "phone": "+919876543210", // Optional
+       "city": "Mumbai"         // Optional
+     }
+     ```
+   - **Response**:
+     ```json
+     {
+       "success": true,
+       "message": "Profile updated successfully",
+       "user": { /* sanitized user object */ }
+     }
+     ```
+   - **Controller**: `clientUserController.js:758` - `updateProfile` function added
+   - **Route**: `clientUserRoutes.js:30` - Registered with clientUserProtect middleware
+   - **Documentation**: `docs/api-quick-reference.md:103`
+   - **Validation**: Name (2-100 chars), Phone (10-15 digits), City (2-50 chars)
+   - **Security**:
+     - User ID from JWT token (req.user._id) - prevents profile hijacking
+     - Protected fields cannot be updated (email, points, onboarding, isActive)
+     - Response excludes password and OTP fields
+     - Inactive users cannot update profile (403 error)
+   - **Status**: ✅ READY FOR MOBILE INTEGRATION
+   - **Testing**: Build successful, ready for manual testing
+   - **Requested By**: Mobile Instance (2026-01-26)
+
+3. **Notification System** (Future Enhancement)
    - [ ] `POST /api/cu/notifications/register` - Register device for push notifications
    - [ ] `GET /api/cu/notifications` - Fetch user notifications
    - **Priority**: LOW (nice-to-have)
+
+### Excel Site Import Feature (2026-02-17) — NEW
+
+**Overview**: Import charging stations from an Excel file. Each Excel row has station metadata + a Google Drive link to a PlugShare JSON file with full station details. The server downloads each JSON, decodes it, enriches with Excel metadata, and upserts.
+
+**API Task**: `POST /api/a/upload-excel-sites` endpoint
+- [ ] Add `xlsx@0.18.5` dependency
+- [ ] Create `server/helpers/parseExcelSites.js` (Excel parsing + enrichment helpers)
+- [ ] Add `uploadExcelSites` controller to `siteController.js`
+- [ ] Add route in `adminRoutes.js`
+- **Status**: ⏳ NOT STARTED
+- **Prompt**: See `AGENT_PROMPTS.md` → "Backend API Agent Prompt — Excel Import Endpoint"
+
+**Dashboard Task**: Import Excel UI
+- [ ] Add "Import Excel" button/option to Sites section
+- [ ] File upload dialog with .xlsx input
+- [ ] Import summary display (total, successful, updated, failed, skipped)
+- **Status**: ⏳ NOT STARTED (blocked by API task)
+- **Prompt**: See `AGENT_PROMPTS.md` → "Frontend Dashboard Agent Prompt — Excel Import UI"
+
+**Data Reference**: `data_sample/` folder has sample Excel (98 rows) and 6 sample JSONs
 
 ### Dashboard Tasks
 - [ ] Implement CSV export functionality for Sites list
@@ -974,6 +1112,40 @@ _None currently_
 ### Dashboard Bugs (Discovered by API)
 _None currently_
 
+### API Bugs (Discovered by Mobile) 🚨 CRITICAL
+
+**🚨 BUG: validateOTP Does Not Return JWT Token - Blocking Impact Screen**
+- **Discovered**: 2026-01-26
+- **Severity**: 🚨 CRITICAL - Blocking production feature
+- **Production Server**: `api.chargecaptain.com`
+- **Endpoint Affected**: `POST /api/cu/validateOTP`
+- **Error Message**: `Error: Not authorized, No token` at `clientUserAuthMiddleware.js:39`
+- **Root Cause**:
+  - The `/api/cu/user/impact` endpoint requires `clientUserProtect` middleware (JWT auth)
+  - The `validateOTP` endpoint returns `{ user, isValid }` but **NO JWT token**
+  - Mobile app cannot authenticate subsequent requests
+  - The `clientUserGenerateToken()` function EXISTS in middleware but is NOT USED
+- **Affected Mobile Features**:
+  - ❌ Impact Screen - `GET /api/cu/user/impact` returns 401
+  - ❌ Station Impact - `GET /api/cu/impact/station/:id` returns 401
+  - ⚠️ Potentially other protected endpoints
+- **Fix Required** (in `chargeCaptainApi/server/controllers/clientUserController.js`):
+  1. Add import: `import { clientUserGenerateToken } from "../middleware/clientUserAuthMiddleware.js";`
+  2. Update `validateOTP` response (line ~380):
+     ```javascript
+     res.status(200).json({
+       user: user,
+       isValid: true,
+       token: clientUserGenerateToken(user._id),  // ADD THIS LINE
+     });
+     ```
+- **Reported By**: Mobile Instance
+- **Status**: ✅ FIXED (2026-01-26)
+- **Backend Fix**: API now returns token in validateOTP response
+- **Mobile Fix**: Added token storage in `verifyOTP` and `onboardUser` methods
+- **Mobile Commit**: 5b32674 - "fix: save JWT token from validateOTP and onboard responses"
+- **Resolution**: Impact screen now works correctly
+
 ### Integration Issues
 _None currently_
 
@@ -1124,6 +1296,49 @@ _All existing endpoints stable and documented_
 ---
 
 ## 📞 Communication Log
+
+### 2026-01-26
+
+#### Profile Editing Feature Planning
+- **User → Mobile**: Requested profile editing feature planning
+  - Need to make profile editable (name, mobile, city)
+  - City is not currently displayed - needs to be shown
+  - Request for UI suggestions to keep current look
+- **Mobile → Exploration**: Analyzed current profile screen and API routes
+  - Found city NOT displayed in profileScreen.dart
+  - Found NO API endpoint for profile updates post-onboarding
+  - `/onboard` endpoint only works when `onboarding === true`
+- **Mobile → Plan File**: Created planning document at `C:\Users\karma\.claude\plans\iterative-brewing-creek.md`
+  - Documented current state analysis
+  - Added 2 UI design options (inline edit vs separate screen)
+  - Recommended inline edit mode (Option A)
+  - Included TextField styling to match current look
+  - Added validation rules and testing checklist
+- **Mobile → WORK_STATUS.md**: Added Phase 3 tasks
+  - Task 8: Display City in Profile (Mobile)
+  - Task 9: Make Profile Editable (Mobile)
+  - API Task 2: Create `POST /api/cu/updateProfile` endpoint (API)
+- **Mobile → Implementation**: Task 8 completed
+  - Added city field to profileScreen.dart Account section
+  - Updated CLAUDE.md with coordination rules and agent prompt reference
+  - Created AGENT_PROMPTS.md for cross-agent communication templates
+  - Commit: 714332d - "feat: display city in profile Account section"
+- **Mobile → Backend Agent**: Requested API endpoint via user
+  - User forwarded specification from WORK_STATUS.md lines 389-406
+  - Backend Agent working on POST /api/cu/updateProfile implementation
+- **Status**: Task 8 complete, Task 9 blocked pending API completion
+- **Backend Agent → Mobile**: API endpoint completed (2026-01-26)
+  - Endpoint: `POST /api/cu/updateProfile`
+  - Status: ✅ READY FOR INTEGRATION
+  - Documentation: See WORK_STATUS.md lines 466-481
+- **Mobile → Implementation**: Task 9 completed (2026-01-26)
+  - Implemented profile edit mode with inline editing (Option A)
+  - Added `updateProfile()` method to AuthController (~95 lines)
+  - Updated profileScreen with edit mode UI (~105 lines)
+  - Features: Edit button, Cancel/Save buttons, TextFormFields, validation, loading states
+  - Tested successfully with API endpoint
+  - Status: ✅ PRODUCTION READY
+- **Phase 3 Status**: ✅ COMPLETE (Tasks 8 & 9 done)
 
 ### 2026-01-18
 

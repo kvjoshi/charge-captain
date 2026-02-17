@@ -1,0 +1,298 @@
+{
+    "access": 1,
+    "access_restriction": null,
+    "access_restriction_description": null,
+    "access_restriction_descriptions": [],
+    "access_restriction_items": [],
+    "access_restrictions": [],
+    "address": "69, Grand Northern Trunk Rd, Moolakadai, Ponniammanmedu, Chennai, Tamil Nadu 600110, India",
+    "all_promos": [],
+    "amenities": [],
+    "available_station_count": null,
+    "coming_soon": false,
+    "confidence": 0,
+    "connector_types": [
+        "CCS2"
+    ],
+    "cost": true,
+    "cost_description": "",
+    "created_at": "2026-01-27T07:26:32Z",
+    "custom_ports": "",
+    "datasources": [],
+    "description": "Charge zone charger",
+    "e164_phone_number": "",
+    "enabled": true,
+    "entrance_latitude": null,
+    "entrance_longitude": null,
+    "formatted_phone_number": "",
+    "has_dynamic_pricing": false,
+    "hours": null,
+    "icon": "https://assets.plugshare.com/icons/Y.png",
+    "icon_type": "Y",
+    "id": 1570406,
+    "in_use_station_count": null,
+    "is_fast_charger": true,
+    "latitude": 13.137728998378375,
+    "locale": "WW",
+    "locale_v2": "WW",
+    "locked": false,
+    "locked_fields": [],
+    "longitude": 80.22911354899406,
+    "majority_network_id": 1377,
+    "meta_description": "2 Electric Vehicle (EV) Charging Stations at Hyundai Charge Zone 60kw Charger. Stations maintained by ChargeZone and located at 69, Grand Northern Trunk Rd, Moolakadai, Ponniammanmedu, Chennai, Tamil Nadu 600110, India",
+    "name": "Hyundai Charge Zone 60kw Charger",
+    "nissan_nctc": false,
+    "ocpi_ids": null,
+    "open247": true,
+    "opened_at": null,
+    "opening_date": null,
+    "opening_times": {
+        "exceptional_closings": null,
+        "exceptional_openings": null,
+        "regular_hours": null,
+        "twenty_four_seven": true,
+        "twentyfourseven": true
+    },
+    "overhead_clearance_meters": null,
+    "parking_attributes": [],
+    "parking_level": "ground ",
+    "parking_type_name": null,
+    "payment_enabled": null,
+    "phone": "",
+    "photos": [],
+    "poi_name": null,
+    "promos": [],
+    "pwps_action": "NO_DISPLAY",
+    "pwps_version": null,
+    "reverse_geocoded_address": "69, GNT Road, Kanakan Chatram Ponniammanmedu, Kanakan Chatram, Madhavaram, Chennai, Tamil Nadu 600110, India",
+    "reverse_geocoded_address_components": {
+        "administrative_area_1": "TN",
+        "administrative_area_2": null,
+        "administrative_area_3": "Chennai",
+        "country_code": "IN",
+        "locality": "Chennai",
+        "postal_code": "600110",
+        "route": null,
+        "street_number": null,
+        "sublocality_1": "Madhavaram",
+        "sublocality_2": "Kanakan Chatram",
+        "sublocality_3": null
+    },
+    "reviews": [],
+    "station_count": 2,
+    "stations": [
+        {
+            "amps": null,
+            "available": 0,
+            "available_changed_at": null,
+            "cost": 0,
+            "cost_description": "Unknown",
+            "created_at": "2026-01-27T07:26:32Z",
+            "hours": "",
+            "id": 2984470,
+            "kilowatts": null,
+            "location_id": 1570406,
+            "manufacturer": "",
+            "model": "",
+            "name": null,
+            "network": {
+                "description": null,
+                "e164_phone_number": "",
+                "formatted_phone_number": "",
+                "id": 1377,
+                "name": "ChargeZone",
+                "phone": null,
+                "url": "https://www.chargezone.com/"
+            },
+            "network_ext_id": null,
+            "network_id": 1377,
+            "nissan_nctc": false,
+            "ocpi_ids": null,
+            "ocpp_version": null,
+            "outlets": [
+                {
+                    "amps": null,
+                    "available": null,
+                    "available_changed_at": null,
+                    "connector": 20,
+                    "connector_name": "CCS2",
+                    "connector_type": 20,
+                    "description": null,
+                    "evse_ext_id": null,
+                    "id": 5350119,
+                    "kilowatts": null,
+                    "network_ext_id": null,
+                    "outlet_index": null,
+                    "power": 0,
+                    "prices": [],
+                    "status": null,
+                    "status_changed_at": null,
+                    "volts": null
+                }
+            ],
+            "payment_enabled": null,
+            "pre_charge_instructions": null,
+            "preferred_feed_id": null,
+            "promos": [],
+            "pwps_version": null,
+            "qr_enabled": null,
+            "requiresAccessCard": false,
+            "volts": null
+        },
+        {
+            "amps": null,
+            "available": 0,
+            "available_changed_at": null,
+            "cost": 0,
+            "cost_description": "Unknown",
+            "created_at": "2026-01-27T07:26:32Z",
+            "hours": "",
+            "id": 2984471,
+            "kilowatts": null,
+            "location_id": 1570406,
+            "manufacturer": "",
+            "model": "",
+            "name": null,
+            "network": {
+                "description": null,
+                "e164_phone_number": "",
+                "formatted_phone_number": "",
+                "id": 1377,
+                "name": "ChargeZone",
+                "phone": null,
+                "url": "https://www.chargezone.com/"
+            },
+            "network_ext_id": null,
+            "network_id": 1377,
+            "nissan_nctc": false,
+            "ocpi_ids": null,
+            "ocpp_version": null,
+            "outlets": [
+                {
+                    "amps": null,
+                    "available": null,
+                    "available_changed_at": null,
+                    "connector": 20,
+                    "connector_name": "CCS2",
+                    "connector_type": 20,
+                    "description": null,
+                    "evse_ext_id": null,
+                    "id": 5350120,
+                    "kilowatts": null,
+                    "network_ext_id": null,
+                    "outlet_index": null,
+                    "power": 0,
+                    "prices": [],
+                    "status": null,
+                    "status_changed_at": null,
+                    "volts": null
+                }
+            ],
+            "payment_enabled": null,
+            "pre_charge_instructions": null,
+            "preferred_feed_id": null,
+            "promos": [],
+            "pwps_version": null,
+            "qr_enabled": null,
+            "requiresAccessCard": false,
+            "volts": null
+        }
+    ],
+    "status": "OPERATIONAL",
+    "title_description": "Hyundai Charge Zone 60kw Charger | Chennai, TN | EV Station",
+    "total_photos": null,
+    "total_reviews": null,
+    "under_repair": false,
+    "updated_at": "2026-01-27T07:26:32Z",
+    "url": "https://www.plugshare.com/location/1570406",
+    "valid_outlets": [
+        {
+            "connector": 26,
+            "power": 0
+        },
+        {
+            "connector": 20,
+            "power": 0
+        },
+        {
+            "connector": 13,
+            "power": 0
+        },
+        {
+            "connector": 3,
+            "power": 0
+        },
+        {
+            "connector": 2,
+            "power": 0
+        },
+        {
+            "connector": 4,
+            "power": 0
+        },
+        {
+            "connector": 7,
+            "power": 0
+        },
+        {
+            "connector": 8,
+            "power": 0
+        },
+        {
+            "connector": 14,
+            "power": 0
+        },
+        {
+            "connector": 15,
+            "power": 0
+        },
+        {
+            "connector": 11,
+            "power": 0
+        },
+        {
+            "connector": 16,
+            "power": 0
+        },
+        {
+            "connector": 17,
+            "power": 0
+        },
+        {
+            "connector": 5,
+            "power": 0
+        },
+        {
+            "connector": 1,
+            "power": 0
+        },
+        {
+            "connector": 9,
+            "power": 0
+        },
+        {
+            "connector": 10,
+            "power": 0
+        },
+        {
+            "connector": 12,
+            "power": 0
+        },
+        {
+            "connector": 27,
+            "power": 0
+        },
+        {
+            "connector": 25,
+            "power": 0
+        },
+        {
+            "connector": 28,
+            "power": 0
+        },
+        {
+            "connector": 24,
+            "power": 0
+        }
+    ]
+}
