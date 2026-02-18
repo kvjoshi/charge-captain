@@ -171,7 +171,9 @@ npm run docs                # Generate JSDoc documentation
 4. **PlugShare Integration**:
    - Single import: `/api/a/single-plugshare`
    - Bulk ZIP import: `/api/a/upload-plugshare`
+   - Excel import with Drive links: `/api/a/upload-excel-sites`
    - Helper: `decodePlugshare.js` parses PlugShare format
+   - Helper: `parseExcelSites.js` parses Excel and enriches sites
 
 5. **Image Handling**:
    - Base64 or FormData upload
@@ -243,7 +245,7 @@ The dashboard module is **100% complete** and production-ready! 🎉
   - Custom markers with popup details
   - Bidirectional selection (map ↔ sidebar)
 - Google Maps click-to-open functionality (uses Place ID when available)
-- PlugShare import (single & bulk ZIP)
+- PlugShare import (single & bulk ZIP) and Excel import (with Google Drive links)
 - Google Places enrichment
 - **Optimized Sites API**: Using new paginated `GET /api/a/sites` endpoint with advanced filtering and statistics
 - **Data transformation layer** to bridge nested backend structure with flat frontend expectations
@@ -599,6 +601,7 @@ Full reference available in `chargeCaptainApi/docs/api-quick-reference.md`.
 - `GET /api/a/sites` - **NEW** Paginated sites with advanced filtering
 - `POST /api/a/addSite` - Create charging station
 - `POST /api/a/upload-plugshare` - Bulk PlugShare import
+- `POST /api/a/upload-excel-sites` - Import sites from Excel with Google Drive links
 - `POST /api/a/enrichSitesWithPlaceIds` - Google Places enrichment
 - `POST /api/a/rewards/products` - Create reward product
 - `POST /api/a/rewards/giftcards` - Add gift card vouchers

@@ -1,6 +1,6 @@
 # Charge Captain - Work Status Tracker
 
-**Last Updated**: 2026-02-17 (Excel Site Import feature added)
+**Last Updated**: 2026-02-18 (Excel Site Import endpoint implemented)
 
 ---
 
@@ -34,9 +34,9 @@
   - 🎯 Future: Dark mode, offline mode, push notifications
 
 ### Dashboard Instance - Status
-- **Working On**: Site Create Page + Map View Filters - ALL COMPLETE
+- **Working On**: Excel Import UI - COMPLETE
 - **Status**: ✅ ALL TASKS COMPLETED
-- **Last Update**: 2024-12-20 00:30
+- **Last Update**: 2026-02-18
 - **Files Modified**:
   - `src/features/sites/SiteCreatePage.jsx` (NEW - Full schema create page with tabs)
   - `src/features/sites/SitesMapViewPage.jsx` (Added state/city filters + auto-zoom)
@@ -54,19 +54,26 @@
   - ✅ Build successful
 
 ### API Instance - Status
-- **Working On**: Impact Tracking Endpoints - COMPLETED
+- **Working On**: Excel Site Import Endpoint - COMPLETED
 - **Status**: ✅ ALL TASKS COMPLETED
-- **Last Update**: 2026-01-18 17:30
+- **Last Update**: 2026-02-18
 - **Files Modified (Latest)**:
-  - `server/controllers/impactController.js` (NEW - Impact tracking endpoints)
-  - `server/routes/clientUserRoutes.js` (registered impact routes with auth)
-  - `docs/api-quick-reference.md` (documented impact endpoints)
+  - `package.json` (added xlsx@0.18.5)
+  - `server/helpers/parseExcelSites.js` (NEW - Excel parsing + enrichment helpers)
+  - `server/controllers/siteController.js` (added uploadExcelSites controller)
+  - `server/routes/adminRoutes.js` (added POST /upload-excel-sites route)
+  - `docs/api-quick-reference.md` (documented endpoint)
 - **Latest Achievements**:
+  - ✅ **Excel Site Import** - `POST /api/a/upload-excel-sites`
+  - ✅ Parses .xlsx, downloads PlugShare JSONs from Google Drive links
+  - ✅ Decodes via existing decode(), enriches with Excel metadata (CPO, placeId, status)
+  - ✅ Upserts by metadata.plugShareId, batch processing (5 at a time)
+  - ✅ Swagger JSDoc documentation added
+  - ✅ Build successful (33 files compiled)
+- **Previous Achievements**:
   - ✅ **Impact Tracking** - Created 2 new endpoints for mobile app
   - ✅ `GET /api/cu/user/impact` - User environmental metrics
   - ✅ `GET /api/cu/impact/station/:id` - Station improvements tracking
-  - ✅ Server rebuilt and running on port 3001
-  - 📋 See "API Endpoint Completions" section below for Mobile integration details
 
 ---
 
@@ -508,24 +515,37 @@
    - [ ] `GET /api/cu/notifications` - Fetch user notifications
    - **Priority**: LOW (nice-to-have)
 
-### Excel Site Import Feature (2026-02-17) — NEW
+### Excel Site Import Feature (2026-02-18) — COMPLETED
 
 **Overview**: Import charging stations from an Excel file. Each Excel row has station metadata + a Google Drive link to a PlugShare JSON file with full station details. The server downloads each JSON, decodes it, enriches with Excel metadata, and upserts.
 
 **API Task**: `POST /api/a/upload-excel-sites` endpoint
-- [ ] Add `xlsx@0.18.5` dependency
-- [ ] Create `server/helpers/parseExcelSites.js` (Excel parsing + enrichment helpers)
-- [ ] Add `uploadExcelSites` controller to `siteController.js`
-- [ ] Add route in `adminRoutes.js`
-- **Status**: ⏳ NOT STARTED
-- **Prompt**: See `AGENT_PROMPTS.md` → "Backend API Agent Prompt — Excel Import Endpoint"
+- [x] Add `xlsx@0.18.5` dependency
+- [x] Create `server/helpers/parseExcelSites.js` (Excel parsing + enrichment helpers)
+- [x] Add `uploadExcelSites` controller to `siteController.js`
+- [x] Add route in `adminRoutes.js`
+- [x] Add Swagger JSDoc documentation
+- [x] Update `docs/api-quick-reference.md`
+- **Status**: ✅ COMPLETED — READY FOR INTEGRATION
+- **Files Modified**:
+  - `package.json` — added xlsx@0.18.5
+  - `server/helpers/parseExcelSites.js` (NEW) — parseExcelRows, extractDriveFileId, isValidGooglePlaceId, enrichSiteWithExcelRow
+  - `server/controllers/siteController.js` — added uploadExcelSites controller with Swagger docs
+  - `server/routes/adminRoutes.js` — added POST /upload-excel-sites route
+  - `docs/api-quick-reference.md` — documented endpoint, columns, enrichment rules
 
 **Dashboard Task**: Import Excel UI
-- [ ] Add "Import Excel" button/option to Sites section
-- [ ] File upload dialog with .xlsx input
-- [ ] Import summary display (total, successful, updated, failed, skipped)
-- **Status**: ⏳ NOT STARTED (blocked by API task)
-- **Prompt**: See `AGENT_PROMPTS.md` → "Frontend Dashboard Agent Prompt — Excel Import UI"
+- [x] Add "Excel Import" tab to existing Import Sites page
+- [x] File upload with .xlsx input and validation
+- [x] Import summary display (total, successful, updated, failed, skipped, success rate)
+- [x] Expandable error list and warnings display
+- [x] Loading state with long-operation warning
+- [x] Retry button on error
+- [x] API function with 5-min timeout in src/api/sites.js
+- **Status**: ✅ COMPLETED (2026-02-18)
+- **Files Modified**:
+  - `chargeCaptainDashboard/src/api/sites.js` — added `uploadExcelSites()` function
+  - `chargeCaptainDashboard/src/features/sites/PlugShareImportPage.jsx` — added Excel Import tab, updated page title
 
 **Data Reference**: `data_sample/` folder has sample Excel (98 rows) and 6 sample JSONs
 
