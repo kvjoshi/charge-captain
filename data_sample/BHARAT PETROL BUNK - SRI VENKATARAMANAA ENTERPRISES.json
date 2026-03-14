@@ -1,0 +1,490 @@
+{
+    "access": 1,
+    "access_restriction": null,
+    "access_restriction_description": null,
+    "access_restriction_descriptions": [],
+    "access_restriction_items": [],
+    "access_restrictions": [],
+    "address": "Sri Venkataramanaa Enterprises, Bharat Petrol Bunk, State Highway SH 111, Vadakarai, Redhills, Chennai, Tamil Nadu 600052, India",
+    "all_promos": [],
+    "amenities": [
+        {
+            "location_id": 999805,
+            "type": 3
+        },
+        {
+            "location_id": 999805,
+            "type": 4
+        }
+    ],
+    "available_station_count": null,
+    "coming_soon": false,
+    "confidence": 0,
+    "connector_types": [
+        "CCS2"
+    ],
+    "cost": true,
+    "cost_description": "14/KWh",
+    "created_at": "2025-07-08T02:25:01Z",
+    "custom_ports": "",
+    "datasources": [],
+    "description": "Use \"eDrive BPCL\" app for accessing 60KW Electric Vehicle Charger located on state highway 111 at Sri Venkataramanaa Enterprises (Bharat Pterol Bunk), No.1/16, Redhills - Madhavaram High Road, Vadakarai, Chennai-600052 (Just 100 meters from NH16 - Chennai Kolkata national highway). Call +91-9363596878 for assistance.",
+    "e164_phone_number": "+919363596878",
+    "enabled": true,
+    "entrance_latitude": null,
+    "entrance_longitude": null,
+    "formatted_phone_number": "+91 93635 96878",
+    "has_dynamic_pricing": false,
+    "hours": null,
+    "icon": "https://assets.plugshare.com/icons/Y.png",
+    "icon_type": "Y",
+    "id": 999805,
+    "in_use_station_count": null,
+    "is_fast_charger": true,
+    "latitude": 13.186290200201624,
+    "locale": "WW",
+    "locale_v2": "WW",
+    "locked": false,
+    "locked_fields": [],
+    "longitude": 80.19466325640678,
+    "majority_network_id": 1567,
+    "meta_description": "2 Electric Vehicle (EV) Charging Stations at BHARAT PETROL BUNK - SRI VENKATARAMANAA ENTERPRISES. Stations maintained by BPCL (Bharat Petroleum Corporation Limited) and located at Sri Venkataramanaa Enterprises, Bharat Petrol Bunk, State Highway SH 111, Vadakarai, Redhills, Chennai, Tamil Nadu 600052, India",
+    "name": "BHARAT PETROL BUNK - SRI VENKATARAMANAA ENTERPRISES",
+    "nissan_nctc": false,
+    "ocpi_ids": null,
+    "open247": true,
+    "opened_at": null,
+    "opening_date": null,
+    "opening_times": {
+        "exceptional_closings": null,
+        "exceptional_openings": null,
+        "regular_hours": null,
+        "twenty_four_seven": true,
+        "twentyfourseven": true
+    },
+    "overhead_clearance_meters": null,
+    "parking_attributes": [],
+    "parking_level": "Ground",
+    "parking_type_name": null,
+    "payment_enabled": null,
+    "phone": "93635 96878",
+    "photos": [
+        {
+            "caption": "",
+            "created_at": "2025-07-19T06:47:47Z",
+            "id": 1798567,
+            "is_visible": true,
+            "language": null,
+            "order": null,
+            "thumbnail": "https://photos.plugshare.com/thumb/1798567.png",
+            "thumbnail2x": "https://photos.plugshare.com/thumb2x/1798567.png",
+            "url": "https://photos.plugshare.com/photos/1798567.jpg",
+            "user_id": 7090142
+        },
+        {
+            "caption": "",
+            "created_at": "2025-07-19T06:47:25Z",
+            "id": 1798566,
+            "is_visible": true,
+            "language": null,
+            "order": null,
+            "thumbnail": "https://photos.plugshare.com/thumb/1798566.png",
+            "thumbnail2x": "https://photos.plugshare.com/thumb2x/1798566.png",
+            "url": "https://photos.plugshare.com/photos/1798566.jpg",
+            "user_id": 7090142
+        },
+        {
+            "caption": "",
+            "created_at": "2025-07-08T02:26:12Z",
+            "id": 1769909,
+            "is_visible": true,
+            "language": null,
+            "order": null,
+            "thumbnail": "https://photos.plugshare.com/thumb/1769909.png",
+            "thumbnail2x": "https://photos.plugshare.com/thumb2x/1769909.png",
+            "url": "https://photos.plugshare.com/photos/1769909.jpg",
+            "user_id": 7090142
+        }
+    ],
+    "poi_name": null,
+    "promos": [],
+    "pwps_action": "NO_DISPLAY",
+    "pwps_version": null,
+    "reverse_geocoded_address": "Petrole bunk, SH 111, Red Hills, Chennai, Tamil Nadu 600052, India",
+    "reverse_geocoded_address_components": {
+        "administrative_area_1": "TN",
+        "administrative_area_2": null,
+        "administrative_area_3": "Tiruvallur",
+        "country_code": "IN",
+        "locality": "Chennai",
+        "postal_code": "600052",
+        "route": "SH 111",
+        "street_number": null,
+        "sublocality_1": "Red Hills",
+        "sublocality_2": null,
+        "sublocality_3": null
+    },
+    "reviews": [
+        {
+            "amps": null,
+            "comment": "",
+            "connector_type": 20,
+            "created_at": "2025-10-17T07:23:42Z",
+            "finished": "2025-10-17T07:53:42Z",
+            "id": 11277185,
+            "is_visible": true,
+            "kilowatts": null,
+            "language": null,
+            "problem": 0,
+            "problem_description": "Not specified",
+            "rating": 1,
+            "response": null,
+            "review_reaction_counts": null,
+            "spam_category": 100,
+            "spam_category_description": "GeoDiscrepancy",
+            "user": {
+                "about": "",
+                "allow_notifications": null,
+                "allow_promo_email": false,
+                "bookmarks": [],
+                "charger_type": 0,
+                "country_code": "IN",
+                "created_at": "2025-07-28T17:24:13Z",
+                "display_name": "ANAND B",
+                "e164_phone_number": "",
+                "first_name": "ANAND B",
+                "formatted_phone_number": "",
+                "id": 7200778,
+                "is_deleted": false,
+                "language_code": "en",
+                "last_login": "2025-07-28T17:24:13Z",
+                "last_name": "",
+                "locations": [],
+                "notify_nearby": 0,
+                "notify_nearby_radius": null,
+                "phone": "",
+                "photos": [],
+                "setup_complete": true,
+                "vehicle_description": "",
+                "vehicle_type": 2286
+            },
+            "vehicle_default_img": null,
+            "vehicle_make": "Tata",
+            "vehicle_make_image_url": null,
+            "vehicle_make_profile_image_url": null,
+            "vehicle_name": "Tata Punch EV 2025",
+            "vehicle_type": 2286,
+            "volts": null,
+            "waiting": false
+        },
+        {
+            "amps": null,
+            "comment": "",
+            "connector_type": 20,
+            "created_at": "2025-07-23T08:23:42Z",
+            "finished": "2025-07-23T08:53:42Z",
+            "id": 10979866,
+            "is_visible": true,
+            "kilowatts": 10,
+            "language": null,
+            "problem": 0,
+            "problem_description": "Not specified",
+            "rating": 1,
+            "response": null,
+            "review_reaction_counts": null,
+            "spam_category": 100,
+            "spam_category_description": "GeoDiscrepancy",
+            "user": {
+                "about": "",
+                "allow_notifications": null,
+                "allow_promo_email": false,
+                "bookmarks": [],
+                "charger_type": 0,
+                "country_code": "IN",
+                "created_at": "2025-07-23T08:21:31Z",
+                "display_name": "gowtham kgr",
+                "e164_phone_number": "",
+                "first_name": "gowtham kgr",
+                "formatted_phone_number": "",
+                "id": 7170457,
+                "is_deleted": false,
+                "language_code": "en",
+                "last_login": "2025-07-23T08:21:31Z",
+                "last_name": "",
+                "locations": [],
+                "notify_nearby": 0,
+                "notify_nearby_radius": null,
+                "phone": "",
+                "photos": [],
+                "setup_complete": true,
+                "vehicle_description": "",
+                "vehicle_type": 0
+            },
+            "volts": null,
+            "waiting": false
+        },
+        {
+            "amps": null,
+            "comment": "The First ever EV fast charger in REDHILLS, 60 KW DC. Charging Bay is neatly demarcated. Another important thing is BPCL is charging only Rs.19 per KW instead of the market rate of Rs.30 per KW. In my opinion it is great value to charge your EV here.",
+            "connector_type": 20,
+            "created_at": "2025-07-14T08:39:39Z",
+            "id": 10946433,
+            "is_visible": true,
+            "kilowatts": null,
+            "language": "eng",
+            "problem": 0,
+            "problem_description": "Not specified",
+            "rating": 0,
+            "response": null,
+            "review_reaction_counts": {
+                "HELPFUL": 1
+            },
+            "spam_category": 100,
+            "spam_category_description": "GeoDiscrepancy",
+            "user": {
+                "about": "",
+                "allow_notifications": null,
+                "allow_promo_email": true,
+                "bookmarks": [],
+                "charger_type": 0,
+                "country_code": "IN",
+                "created_at": "2023-01-31T08:29:42Z",
+                "display_name": "Siva Prakash",
+                "e164_phone_number": "",
+                "first_name": "Siva Prakash",
+                "formatted_phone_number": "",
+                "id": 3161400,
+                "is_deleted": false,
+                "language_code": "en-US",
+                "last_login": "2025-11-08T07:00:22Z",
+                "last_name": "",
+                "locations": [],
+                "notify_nearby": 0,
+                "notify_nearby_radius": null,
+                "phone": "",
+                "photos": [],
+                "setup_complete": true,
+                "vehicle_description": "",
+                "vehicle_type": 0
+            },
+            "volts": null,
+            "waiting": false
+        }
+    ],
+    "station_count": 2,
+    "stations": [
+        {
+            "amps": null,
+            "available": 0,
+            "available_changed_at": null,
+            "cost": 0,
+            "cost_description": "Unknown",
+            "created_at": "2025-07-08T02:25:01Z",
+            "hours": "",
+            "id": 2385787,
+            "kilowatts": null,
+            "location_id": 999805,
+            "manufacturer": "",
+            "model": "",
+            "name": null,
+            "network": {
+                "description": null,
+                "e164_phone_number": "",
+                "formatted_phone_number": "",
+                "id": 1567,
+                "name": "BPCL (Bharat Petroleum Corporation Limited)",
+                "phone": null,
+                "url": "https://www.bharatpetroleum.in/"
+            },
+            "network_ext_id": null,
+            "network_id": 1567,
+            "nissan_nctc": false,
+            "ocpi_ids": null,
+            "ocpp_version": null,
+            "outlets": [
+                {
+                    "amps": null,
+                    "available": null,
+                    "available_changed_at": null,
+                    "connector": 20,
+                    "connector_name": "CCS2",
+                    "connector_type": 20,
+                    "description": null,
+                    "evse_ext_id": null,
+                    "id": 4719713,
+                    "kilowatts": null,
+                    "network_ext_id": null,
+                    "outlet_index": null,
+                    "power": 0,
+                    "prices": [],
+                    "status": null,
+                    "status_changed_at": null,
+                    "volts": null
+                }
+            ],
+            "payment_enabled": null,
+            "pre_charge_instructions": null,
+            "preferred_feed_id": null,
+            "promos": [],
+            "pwps_version": null,
+            "qr_enabled": null,
+            "requiresAccessCard": false,
+            "volts": null
+        },
+        {
+            "amps": null,
+            "available": 0,
+            "available_changed_at": null,
+            "cost": 0,
+            "cost_description": "Unknown",
+            "created_at": "2025-07-08T02:31:45Z",
+            "hours": "",
+            "id": 2385803,
+            "kilowatts": null,
+            "location_id": 999805,
+            "manufacturer": "",
+            "model": "",
+            "name": null,
+            "network": {
+                "description": null,
+                "e164_phone_number": "",
+                "formatted_phone_number": "",
+                "id": 1567,
+                "name": "BPCL (Bharat Petroleum Corporation Limited)",
+                "phone": null,
+                "url": "https://www.bharatpetroleum.in/"
+            },
+            "network_ext_id": null,
+            "network_id": 1567,
+            "nissan_nctc": false,
+            "ocpi_ids": null,
+            "ocpp_version": null,
+            "outlets": [
+                {
+                    "amps": null,
+                    "available": null,
+                    "available_changed_at": null,
+                    "connector": 20,
+                    "connector_name": "CCS2",
+                    "connector_type": 20,
+                    "description": null,
+                    "evse_ext_id": null,
+                    "id": 4719733,
+                    "kilowatts": null,
+                    "network_ext_id": null,
+                    "outlet_index": null,
+                    "power": 0,
+                    "prices": [],
+                    "status": null,
+                    "status_changed_at": null,
+                    "volts": null
+                }
+            ],
+            "payment_enabled": null,
+            "pre_charge_instructions": null,
+            "preferred_feed_id": null,
+            "promos": [],
+            "pwps_version": null,
+            "qr_enabled": null,
+            "requiresAccessCard": false,
+            "volts": null
+        }
+    ],
+    "status": "OPERATIONAL",
+    "title_description": "BHARAT PETROL BUNK - SRI VENKATARAMANAA ENTERPRISES | Chennai, TN | EV Station",
+    "total_photos": 3,
+    "total_reviews": 3,
+    "under_repair": false,
+    "updated_at": "2025-10-17T07:23:42Z",
+    "url": "https://www.plugshare.com/location/999805",
+    "valid_outlets": [
+        {
+            "connector": 26,
+            "power": 0
+        },
+        {
+            "connector": 20,
+            "power": 0
+        },
+        {
+            "connector": 13,
+            "power": 0
+        },
+        {
+            "connector": 3,
+            "power": 0
+        },
+        {
+            "connector": 2,
+            "power": 0
+        },
+        {
+            "connector": 4,
+            "power": 0
+        },
+        {
+            "connector": 7,
+            "power": 0
+        },
+        {
+            "connector": 8,
+            "power": 0
+        },
+        {
+            "connector": 14,
+            "power": 0
+        },
+        {
+            "connector": 15,
+            "power": 0
+        },
+        {
+            "connector": 11,
+            "power": 0
+        },
+        {
+            "connector": 16,
+            "power": 0
+        },
+        {
+            "connector": 17,
+            "power": 0
+        },
+        {
+            "connector": 5,
+            "power": 0
+        },
+        {
+            "connector": 1,
+            "power": 0
+        },
+        {
+            "connector": 9,
+            "power": 0
+        },
+        {
+            "connector": 10,
+            "power": 0
+        },
+        {
+            "connector": 12,
+            "power": 0
+        },
+        {
+            "connector": 27,
+            "power": 0
+        },
+        {
+            "connector": 25,
+            "power": 0
+        },
+        {
+            "connector": 28,
+            "power": 0
+        },
+        {
+            "connector": 24,
+            "power": 0
+        }
+    ]
+}

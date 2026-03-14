@@ -1,0 +1,387 @@
+{
+    "access": 1,
+    "access_restriction": null,
+    "access_restriction_description": null,
+    "access_restriction_descriptions": [],
+    "access_restriction_items": [],
+    "access_restrictions": [],
+    "address": "105, Kavarapalayam, Gandhi Nagar, Pattabiram, Avadi, Tamil Nadu 600072, India",
+    "all_promos": [],
+    "amenities": [],
+    "available_station_count": null,
+    "coming_soon": false,
+    "confidence": 0,
+    "connector_types": [
+        "CCS2"
+    ],
+    "cost": true,
+    "cost_description": "",
+    "created_at": "2024-12-25T07:34:02Z",
+    "custom_ports": "",
+    "datasources": [],
+    "description": "Reliance Petrol Pump",
+    "e164_phone_number": "",
+    "enabled": true,
+    "entrance_latitude": null,
+    "entrance_longitude": null,
+    "formatted_phone_number": "",
+    "has_dynamic_pricing": false,
+    "hours": null,
+    "icon": "https://assets.plugshare.com/icons/Y.png",
+    "icon_type": "Y",
+    "id": 717911,
+    "in_use_station_count": null,
+    "is_fast_charger": true,
+    "latitude": 13.119195461855808,
+    "locale": "WW",
+    "locale_v2": "WW",
+    "locked": false,
+    "locked_fields": [],
+    "longitude": 80.08802901953459,
+    "majority_network_id": 1408,
+    "meta_description": "1 Electric Vehicle (EV) Charging Station at Jiobp Mobility Station. Stations maintained by Jio-bp Pulse and located at 105, Kavarapalayam, Gandhi Nagar, Pattabiram, Avadi, Tamil Nadu 600072, India",
+    "name": "Jiobp Mobility Station",
+    "nissan_nctc": false,
+    "ocpi_ids": null,
+    "open247": false,
+    "opened_at": null,
+    "opening_date": null,
+    "opening_times": {
+        "exceptional_closings": null,
+        "exceptional_openings": null,
+        "regular_hours": null,
+        "twenty_four_seven": false,
+        "twentyfourseven": false
+    },
+    "overhead_clearance_meters": null,
+    "parking_attributes": [],
+    "parking_level": "",
+    "parking_type_name": null,
+    "payment_enabled": null,
+    "phone": "",
+    "photos": [],
+    "poi_name": null,
+    "promos": [],
+    "pwps_action": "NO_DISPLAY",
+    "pwps_version": null,
+    "reverse_geocoded_address": "105, Kavarapalayam, Gandhi Nagar, Pattabiram, Avadi, Tamil Nadu 600072, India",
+    "reverse_geocoded_address_components": {
+        "administrative_area_1": "TN",
+        "administrative_area_2": null,
+        "administrative_area_3": "Tiruvallur",
+        "country_code": "IN",
+        "locality": "Pattabiram",
+        "postal_code": "600072",
+        "route": null,
+        "street_number": null,
+        "sublocality_1": null,
+        "sublocality_2": null,
+        "sublocality_3": "Gandhi Nagar"
+    },
+    "reviews": [
+        {
+            "amps": null,
+            "comment": "",
+            "connector_type": 20,
+            "created_at": "2025-11-16T12:12:37Z",
+            "finished": "2025-11-16T12:42:37Z",
+            "id": 11370399,
+            "is_visible": true,
+            "kilowatts": null,
+            "language": null,
+            "outlet_id": 4290678,
+            "problem": 0,
+            "problem_description": "Not specified",
+            "rating": 1,
+            "response": null,
+            "review_reaction_counts": null,
+            "spam_category": 100,
+            "spam_category_description": "GeoDiscrepancy",
+            "station_id": 2059276,
+            "user": {
+                "about": "",
+                "allow_notifications": null,
+                "allow_promo_email": false,
+                "bookmarks": [],
+                "charger_type": 0,
+                "country_code": "IN",
+                "created_at": "2025-10-13T11:28:42Z",
+                "display_name": "Naresh",
+                "e164_phone_number": "",
+                "first_name": "Naresh",
+                "formatted_phone_number": "",
+                "id": 7583577,
+                "is_deleted": false,
+                "language_code": "en-US",
+                "last_login": "2025-10-13T11:28:42Z",
+                "last_name": "",
+                "locations": [],
+                "notify_nearby": 0,
+                "notify_nearby_radius": null,
+                "phone": "",
+                "photos": [],
+                "setup_complete": true,
+                "vehicle_description": "",
+                "vehicle_type": 0
+            },
+            "volts": null,
+            "waiting": false
+        },
+        {
+            "amps": null,
+            "comment": "",
+            "connector_type": 20,
+            "created_at": "2025-09-12T14:32:54Z",
+            "id": 11164946,
+            "is_visible": true,
+            "kilowatts": 40,
+            "language": null,
+            "outlet_id": 4290678,
+            "problem": 0,
+            "problem_description": "Not specified",
+            "rating": 1,
+            "response": null,
+            "review_reaction_counts": null,
+            "station_id": 2059276,
+            "user": {
+                "about": "",
+                "allow_notifications": null,
+                "allow_promo_email": true,
+                "bookmarks": [],
+                "charger_type": 0,
+                "country_code": "IN",
+                "created_at": "2022-09-10T12:46:20Z",
+                "display_name": "Infinity Views",
+                "e164_phone_number": "",
+                "first_name": "Infinity Views",
+                "formatted_phone_number": "",
+                "id": 2737408,
+                "is_deleted": false,
+                "language_code": "en-US",
+                "last_login": "2025-12-17T13:08:38Z",
+                "last_name": "",
+                "locations": [],
+                "notify_nearby": 0,
+                "notify_nearby_radius": null,
+                "phone": "",
+                "photos": [],
+                "setup_complete": true,
+                "vehicle_description": "",
+                "vehicle_type": 451
+            },
+            "vehicle_default_img": "https://assets.plugshare.com/vehicles/makes/mobile/tata.png",
+            "vehicle_make": "Tata",
+            "vehicle_make_image_url": "https://assets.plugshare.com/vehicles/makes/image/tata.png",
+            "vehicle_make_profile_image_url": "https://assets.plugshare.com/vehicles/makes/profile/tata.png",
+            "vehicle_name": "Tata Nexon EV 2020",
+            "vehicle_type": 451,
+            "volts": null,
+            "waiting": false
+        },
+        {
+            "amps": null,
+            "comment": "",
+            "connector_type": 20,
+            "created_at": "2025-01-26T06:11:34Z",
+            "id": 10365964,
+            "is_visible": true,
+            "kilowatts": null,
+            "language": null,
+            "outlet_id": 4290678,
+            "problem": 0,
+            "problem_description": "Not specified",
+            "rating": 1,
+            "response": null,
+            "review_reaction_counts": null,
+            "spam_category": 100,
+            "spam_category_description": "GeoDiscrepancy",
+            "station_id": 2059276,
+            "user": {
+                "about": "",
+                "allow_notifications": null,
+                "allow_promo_email": true,
+                "bookmarks": [],
+                "charger_type": 0,
+                "country_code": "IN",
+                "created_at": "2025-01-26T06:10:08Z",
+                "display_name": "Poomani A",
+                "e164_phone_number": "",
+                "first_name": "Poomani A",
+                "formatted_phone_number": "",
+                "id": 6329791,
+                "is_deleted": false,
+                "language_code": "en-US",
+                "last_login": "2025-01-26T06:10:08Z",
+                "last_name": "",
+                "locations": [],
+                "notify_nearby": 0,
+                "notify_nearby_radius": null,
+                "phone": "",
+                "photos": [],
+                "setup_complete": true,
+                "vehicle_description": "",
+                "vehicle_type": 0
+            },
+            "volts": null,
+            "waiting": false
+        }
+    ],
+    "station_count": 1,
+    "stations": [
+        {
+            "amps": null,
+            "available": 0,
+            "available_changed_at": null,
+            "cost": 0,
+            "cost_description": "Unknown",
+            "created_at": "2024-12-25T07:34:02Z",
+            "hours": "",
+            "id": 2059276,
+            "kilowatts": null,
+            "location_id": 717911,
+            "manufacturer": "",
+            "model": "",
+            "name": null,
+            "network": {
+                "description": "The Electric Mobility business of Jio-bp with an aim to cater to the growing EV charging requirements in India.",
+                "e164_phone_number": "",
+                "formatted_phone_number": "",
+                "id": 1408,
+                "name": "Jio-bp Pulse",
+                "phone": "1800-891-9023",
+                "url": "https://jiobp.com/products-and-services/EV-charging"
+            },
+            "network_ext_id": null,
+            "network_id": 1408,
+            "nissan_nctc": false,
+            "ocpi_ids": null,
+            "ocpp_version": null,
+            "outlets": [
+                {
+                    "amps": null,
+                    "available": null,
+                    "available_changed_at": null,
+                    "connector": 20,
+                    "connector_name": "CCS2",
+                    "connector_type": 20,
+                    "description": null,
+                    "evse_ext_id": null,
+                    "id": 4290678,
+                    "kilowatts": null,
+                    "network_ext_id": null,
+                    "outlet_index": null,
+                    "power": 0,
+                    "prices": [],
+                    "status": null,
+                    "status_changed_at": null,
+                    "volts": null
+                }
+            ],
+            "payment_enabled": null,
+            "pre_charge_instructions": null,
+            "preferred_feed_id": null,
+            "promos": [],
+            "pwps_version": null,
+            "qr_enabled": null,
+            "requiresAccessCard": false,
+            "volts": null
+        }
+    ],
+    "status": "OPERATIONAL",
+    "title_description": "Jiobp Mobility Station | Pattabiram, TN | EV Station",
+    "total_photos": null,
+    "total_reviews": 3,
+    "under_repair": false,
+    "updated_at": "2025-11-16T12:12:37Z",
+    "url": "https://www.plugshare.com/location/717911",
+    "valid_outlets": [
+        {
+            "connector": 26,
+            "power": 0
+        },
+        {
+            "connector": 20,
+            "power": 0
+        },
+        {
+            "connector": 13,
+            "power": 0
+        },
+        {
+            "connector": 3,
+            "power": 0
+        },
+        {
+            "connector": 2,
+            "power": 0
+        },
+        {
+            "connector": 4,
+            "power": 0
+        },
+        {
+            "connector": 7,
+            "power": 0
+        },
+        {
+            "connector": 8,
+            "power": 0
+        },
+        {
+            "connector": 14,
+            "power": 0
+        },
+        {
+            "connector": 15,
+            "power": 0
+        },
+        {
+            "connector": 11,
+            "power": 0
+        },
+        {
+            "connector": 16,
+            "power": 0
+        },
+        {
+            "connector": 17,
+            "power": 0
+        },
+        {
+            "connector": 5,
+            "power": 0
+        },
+        {
+            "connector": 1,
+            "power": 0
+        },
+        {
+            "connector": 9,
+            "power": 0
+        },
+        {
+            "connector": 10,
+            "power": 0
+        },
+        {
+            "connector": 12,
+            "power": 0
+        },
+        {
+            "connector": 27,
+            "power": 0
+        },
+        {
+            "connector": 25,
+            "power": 0
+        },
+        {
+            "connector": 28,
+            "power": 0
+        },
+        {
+            "connector": 24,
+            "power": 0
+        }
+    ]
+}

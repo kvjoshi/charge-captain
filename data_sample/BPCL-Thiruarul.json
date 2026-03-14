@@ -1,0 +1,358 @@
+{
+    "access": 1,
+    "access_restriction": null,
+    "access_restriction_description": null,
+    "access_restriction_descriptions": [],
+    "access_restriction_items": [],
+    "access_restrictions": [],
+    "address": "Lakshaadeep 42, Ambattur Red Hills Rd, West Balaji Nagar, Kallikuppam, Korattur, Chennai, Tamil Nadu 600053, India",
+    "all_promos": [],
+    "amenities": [
+        {
+            "location_id": 1208893,
+            "type": 4
+        },
+        {
+            "location_id": 1208893,
+            "type": 3
+        }
+    ],
+    "available_station_count": null,
+    "coming_soon": false,
+    "confidence": 0,
+    "connector_types": [
+        "CCS2"
+    ],
+    "cost": true,
+    "cost_description": "14",
+    "created_at": "2025-09-20T08:12:35Z",
+    "custom_ports": "",
+    "datasources": [],
+    "description": "",
+    "e164_phone_number": "",
+    "enabled": true,
+    "entrance_latitude": null,
+    "entrance_longitude": null,
+    "formatted_phone_number": "",
+    "has_dynamic_pricing": false,
+    "hours": null,
+    "icon": "https://assets.plugshare.com/icons/Y.png",
+    "icon_type": "Y",
+    "id": 1208893,
+    "in_use_station_count": null,
+    "is_fast_charger": true,
+    "latitude": 13.13254202416318,
+    "locale": "WW",
+    "locale_v2": "WW",
+    "locked": false,
+    "locked_fields": [],
+    "longitude": 80.16767685823397,
+    "majority_network_id": 1567,
+    "meta_description": "2 Electric Vehicle (EV) Charging Stations at BPCL-Thiruarul. Stations maintained by BPCL (Bharat Petroleum Corporation Limited) and located at Lakshaadeep 42, Ambattur Red Hills Rd, West Balaji Nagar, Kallikuppam, Korattur, Chennai, Tamil Nadu 600053, India",
+    "name": "BPCL-Thiruarul",
+    "nissan_nctc": false,
+    "ocpi_ids": null,
+    "open247": true,
+    "opened_at": null,
+    "opening_date": null,
+    "opening_times": {
+        "exceptional_closings": null,
+        "exceptional_openings": null,
+        "regular_hours": null,
+        "twenty_four_seven": true,
+        "twentyfourseven": true
+    },
+    "overhead_clearance_meters": null,
+    "parking_attributes": [],
+    "parking_level": null,
+    "parking_type_name": null,
+    "payment_enabled": null,
+    "phone": "",
+    "photos": [],
+    "poi_name": null,
+    "promos": [],
+    "pwps_action": "NO_DISPLAY",
+    "pwps_version": null,
+    "reverse_geocoded_address": "Lakshaadeep 42, Ambattur Red Hills Rd, West Balaji Nagar, Kallikuppam, Korattur, Chennai, Tamil Nadu 600053, India",
+    "reverse_geocoded_address_components": {
+        "administrative_area_1": "TN",
+        "administrative_area_2": null,
+        "administrative_area_3": "Chennai",
+        "country_code": "IN",
+        "locality": "Chennai",
+        "postal_code": "600053",
+        "route": "Ambattur Red Hills Rd",
+        "street_number": "Lakshaadeep 42",
+        "sublocality_1": "Korattur",
+        "sublocality_2": "Kallikuppam",
+        "sublocality_3": "West Balaji Nagar"
+    },
+    "reviews": [
+        {
+            "amps": null,
+            "comment": "",
+            "connector_type": 20,
+            "created_at": "2025-09-20T08:14:32Z",
+            "finished": "2025-09-20T08:34:32Z",
+            "id": 11189932,
+            "is_visible": true,
+            "kilowatts": 30,
+            "language": null,
+            "problem": 0,
+            "problem_description": "Not specified",
+            "rating": 1,
+            "response": null,
+            "review_reaction_counts": null,
+            "user": {
+                "about": "",
+                "allow_notifications": null,
+                "allow_promo_email": false,
+                "bookmarks": [],
+                "charger_type": 0,
+                "country_code": "IN",
+                "created_at": "2025-09-07T08:36:51Z",
+                "display_name": "Azhar",
+                "e164_phone_number": "",
+                "first_name": "Azhar",
+                "formatted_phone_number": "",
+                "id": 7416373,
+                "is_deleted": false,
+                "language_code": "en-US",
+                "last_login": "2025-09-07T08:36:51Z",
+                "last_name": "",
+                "locations": [],
+                "notify_nearby": 0,
+                "notify_nearby_radius": null,
+                "phone": "",
+                "photos": [],
+                "setup_complete": true,
+                "vehicle_description": "",
+                "vehicle_type": 2099
+            },
+            "vehicle_default_img": null,
+            "vehicle_make": "MG Motor",
+            "vehicle_make_image_url": null,
+            "vehicle_make_profile_image_url": null,
+            "vehicle_name": "MG Motor Windsor EV 2025",
+            "vehicle_type": 2099,
+            "volts": null,
+            "waiting": false
+        }
+    ],
+    "station_count": 2,
+    "stations": [
+        {
+            "amps": null,
+            "available": 0,
+            "available_changed_at": null,
+            "cost": 0,
+            "cost_description": "Unknown",
+            "created_at": "2025-09-20T08:12:35Z",
+            "hours": "",
+            "id": 2591854,
+            "kilowatts": null,
+            "location_id": 1208893,
+            "manufacturer": "",
+            "model": "",
+            "name": null,
+            "network": {
+                "description": null,
+                "e164_phone_number": "",
+                "formatted_phone_number": "",
+                "id": 1567,
+                "name": "BPCL (Bharat Petroleum Corporation Limited)",
+                "phone": null,
+                "url": "https://www.bharatpetroleum.in/"
+            },
+            "network_ext_id": null,
+            "network_id": 1567,
+            "nissan_nctc": false,
+            "ocpi_ids": null,
+            "ocpp_version": null,
+            "outlets": [
+                {
+                    "amps": null,
+                    "available": null,
+                    "available_changed_at": null,
+                    "connector": 20,
+                    "connector_name": "CCS2",
+                    "connector_type": 20,
+                    "description": null,
+                    "evse_ext_id": null,
+                    "id": 4933895,
+                    "kilowatts": null,
+                    "network_ext_id": null,
+                    "outlet_index": null,
+                    "power": 0,
+                    "prices": [],
+                    "status": null,
+                    "status_changed_at": null,
+                    "volts": null
+                }
+            ],
+            "payment_enabled": null,
+            "pre_charge_instructions": null,
+            "preferred_feed_id": null,
+            "promos": [],
+            "pwps_version": null,
+            "qr_enabled": null,
+            "requiresAccessCard": false,
+            "volts": null
+        },
+        {
+            "amps": null,
+            "available": 0,
+            "available_changed_at": null,
+            "cost": 0,
+            "cost_description": "Unknown",
+            "created_at": "2025-09-20T08:13:59Z",
+            "hours": "",
+            "id": 2591855,
+            "kilowatts": null,
+            "location_id": 1208893,
+            "manufacturer": "",
+            "model": "",
+            "name": null,
+            "network": {
+                "description": null,
+                "e164_phone_number": "",
+                "formatted_phone_number": "",
+                "id": 1567,
+                "name": "BPCL (Bharat Petroleum Corporation Limited)",
+                "phone": null,
+                "url": "https://www.bharatpetroleum.in/"
+            },
+            "network_ext_id": null,
+            "network_id": 1567,
+            "nissan_nctc": false,
+            "ocpi_ids": null,
+            "ocpp_version": null,
+            "outlets": [
+                {
+                    "amps": null,
+                    "available": null,
+                    "available_changed_at": null,
+                    "connector": 20,
+                    "connector_name": "CCS2",
+                    "connector_type": 20,
+                    "description": null,
+                    "evse_ext_id": null,
+                    "id": 4933896,
+                    "kilowatts": null,
+                    "network_ext_id": null,
+                    "outlet_index": null,
+                    "power": 0,
+                    "prices": [],
+                    "status": null,
+                    "status_changed_at": null,
+                    "volts": null
+                }
+            ],
+            "payment_enabled": null,
+            "pre_charge_instructions": null,
+            "preferred_feed_id": null,
+            "promos": [],
+            "pwps_version": null,
+            "qr_enabled": null,
+            "requiresAccessCard": false,
+            "volts": null
+        }
+    ],
+    "status": "OPERATIONAL",
+    "title_description": "BPCL-Thiruarul | Chennai, TN | EV Station",
+    "total_photos": null,
+    "total_reviews": 1,
+    "under_repair": false,
+    "updated_at": "2025-09-20T08:14:32Z",
+    "url": "https://www.plugshare.com/location/1208893",
+    "valid_outlets": [
+        {
+            "connector": 26,
+            "power": 0
+        },
+        {
+            "connector": 20,
+            "power": 0
+        },
+        {
+            "connector": 13,
+            "power": 0
+        },
+        {
+            "connector": 3,
+            "power": 0
+        },
+        {
+            "connector": 2,
+            "power": 0
+        },
+        {
+            "connector": 4,
+            "power": 0
+        },
+        {
+            "connector": 7,
+            "power": 0
+        },
+        {
+            "connector": 8,
+            "power": 0
+        },
+        {
+            "connector": 14,
+            "power": 0
+        },
+        {
+            "connector": 15,
+            "power": 0
+        },
+        {
+            "connector": 11,
+            "power": 0
+        },
+        {
+            "connector": 16,
+            "power": 0
+        },
+        {
+            "connector": 17,
+            "power": 0
+        },
+        {
+            "connector": 5,
+            "power": 0
+        },
+        {
+            "connector": 1,
+            "power": 0
+        },
+        {
+            "connector": 9,
+            "power": 0
+        },
+        {
+            "connector": 10,
+            "power": 0
+        },
+        {
+            "connector": 12,
+            "power": 0
+        },
+        {
+            "connector": 27,
+            "power": 0
+        },
+        {
+            "connector": 25,
+            "power": 0
+        },
+        {
+            "connector": 28,
+            "power": 0
+        },
+        {
+            "connector": 24,
+            "power": 0
+        }
+    ]
+}
