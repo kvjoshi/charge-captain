@@ -1,0 +1,215 @@
+{
+  "main": {
+    "id": "2c28ce5a9bebb958",
+    "type": "split",
+    "children": [
+      {
+        "id": "c8db852539f45736",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "2b5077a0031520b8",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "CLAUDE.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "CLAUDE"
+            }
+          },
+          {
+            "id": "9c674c7ee983734a",
+            "type": "leaf",
+            "state": {
+              "type": "release-notes",
+              "state": {
+                "currentVersion": "1.11.7"
+              },
+              "icon": "lucide-book-up",
+              "title": "Release Notes 1.11.7"
+            }
+          }
+        ],
+        "currentTab": 1
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "c2a16e4aed78cc65",
+    "type": "split",
+    "children": [
+      {
+        "id": "c0341c3776221f90",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "65dfcb0f09a13f17",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {
+                "sortOrder": "alphabetical",
+                "autoReveal": false
+              },
+              "icon": "lucide-folder-closed",
+              "title": "Files"
+            }
+          },
+          {
+            "id": "4d4ec15ba3850a58",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              },
+              "icon": "lucide-search",
+              "title": "Search"
+            }
+          },
+          {
+            "id": "afca4da9a7a074ac",
+            "type": "leaf",
+            "state": {
+              "type": "bookmarks",
+              "state": {},
+              "icon": "lucide-bookmark",
+              "title": "Bookmarks"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300
+  },
+  "right": {
+    "id": "26ebcfab962ec5b5",
+    "type": "split",
+    "children": [
+      {
+        "id": "ad51030bf662443d",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "95cce318eb31754a",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "file": "CLAUDE.md",
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-coming-in",
+              "title": "Backlinks for CLAUDE"
+            }
+          },
+          {
+            "id": "f573daff6e02ef11",
+            "type": "leaf",
+            "state": {
+              "type": "outgoing-link",
+              "state": {
+                "file": "CLAUDE.md",
+                "linksCollapsed": false,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-going-out",
+              "title": "Outgoing links from CLAUDE"
+            }
+          },
+          {
+            "id": "b2a64fe69673bdd1",
+            "type": "leaf",
+            "state": {
+              "type": "tag",
+              "state": {
+                "sortOrder": "frequency",
+                "useHierarchy": true,
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-tags",
+              "title": "Tags"
+            }
+          },
+          {
+            "id": "b719b793e1a08866",
+            "type": "leaf",
+            "state": {
+              "type": "all-properties",
+              "state": {
+                "sortOrder": "frequency",
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-archive",
+              "title": "All properties"
+            }
+          },
+          {
+            "id": "302d31ff65639a7d",
+            "type": "leaf",
+            "state": {
+              "type": "outline",
+              "state": {
+                "file": "CLAUDE.md",
+                "followCursor": false,
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-list",
+              "title": "Outline of CLAUDE"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300,
+    "collapsed": true
+  },
+  "left-ribbon": {
+    "hiddenItems": {
+      "switcher:Open quick switcher": false,
+      "graph:Open graph view": false,
+      "canvas:Create new canvas": false,
+      "daily-notes:Open today's daily note": false,
+      "templates:Insert template": false,
+      "command-palette:Open command palette": false,
+      "bases:Create new base": false
+    }
+  },
+  "active": "9c674c7ee983734a",
+  "lastOpenFiles": [
+    "AGENT_PROMPTS.md",
+    "CLAUDE.md.tmp.32612.1771399143911",
+    "chargeCaptainDashboard/CLAUDE.md.tmp.32612.1771399119164",
+    "AGENT_PROMPTS.md.tmp.31576.1771399087887",
+    "WORK_STATUS.md.tmp.32612.1771398636518",
+    "WORK_STATUS.md.tmp.32612.1771398629829",
+    "chargeCaptainDashboard/src/features/sites/PlugShareImportPage.jsx.tmp.32612.1771398551514",
+    "chargeCaptainDashboard/src/api/sites.js.tmp.32612.1771398530636",
+    "CLAUDE.md.tmp.32192.1771398469825",
+    "CLAUDE.md.tmp.32192.1771398468198",
+    "chargeCaptainApi/pnpm-lock.yaml.4259563255",
+    "WORK_STATUS.md",
+    "COORDINATION.md"
+  ]
+}
